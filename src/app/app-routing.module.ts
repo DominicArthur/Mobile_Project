@@ -11,6 +11,19 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'directors',
+    loadChildren: () => import('./directors/directors.module').then( m => m.DirectorsPageModule)
+  },  {
+    path: 'fav-poki',
+    loadChildren: () => import('./fav-poki/fav-poki.module').then( m => m.FavPokiPageModule)
+  },
+  {
+    path: 'test',
+    loadChildren: () => import('./test/test.module').then( m => m.TestPageModule)
+  },
+
+
 ];
 
 @NgModule({

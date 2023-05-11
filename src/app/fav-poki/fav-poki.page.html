@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button>
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Favourites
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <!-- Declare an input field to add a favorite Pokemon -->
+  <ion-input [value]="favPokemon"placeholder="Add here"></ion-input>
+   <!-- Declare a button to save the favorite Pokemon -->
+  <ion-button (click)="onSave()">Save</ion-button>
+  </ion-item>
+</ion-content>

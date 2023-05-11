@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button>
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>PokeKnowledge</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button [routerLink]="['/fav-poki']" routerDirection="forward">Add Favourite</ion-button>
+  <br>
+   <!-- The *ngFor directive is used to loop through the "myPokemon" array and create a button for each item with the name of the Pokemon -->
+   <ion-button *ngFor="let x of myPokemon"(click)="openPokePage(x.name)">{{x.name}}</ion-button>
+</ion-content>

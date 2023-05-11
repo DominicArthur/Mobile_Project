@@ -1,19 +1,14 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header collapse="condence">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+        <!-- Add an ion-toolbar component to the header with a large title "PokeKnowledge" -->
+      <ion-title size="large">PokeKnowledge</ion-title>
     </ion-toolbar>
-  </ion-header>
+</ion-header>
 
-  <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
-  </div>
+<!-- Add a container div with an ion-button component that navigates to "/directors" with a forward direction -->
+<div id="container">
+  <ion-button [routerLink]="['/directors']" routerDirection="forward">View Pokemon</ion-button>
+</div>
 </ion-content>
